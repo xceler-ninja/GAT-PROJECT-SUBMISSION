@@ -1,0 +1,15 @@
+Python 3.5.1+ (default, Mar 30 2016, 22:46:26) 
+[GCC 5.3.1 20160330] on linux
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+======================= RESTART: /home/rohith/test1.py =======================
+1492681
+Accuracy in %:
+100.0
+Most Informative Features
+      contains(reminder) = True              pos : neg    =      9.0 : 1.0
+   contains(wonderfully) = True              pos : neg    =      6.9 : 1.0
+          contains(scum) = True              pos : neg    =      6.3 : 1.0
+      contains(palpable) = True              pos : neg    =      5.8 : 1.0
+          contains(tide) = True              pos : neg    =      5.7 : 1.0
+>>> 
