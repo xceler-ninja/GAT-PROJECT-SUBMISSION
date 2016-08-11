@@ -1,0 +1,31 @@
+int led1=D7;
+int led2=D0;
+
+void setup()
+{
+    pinmode(led1,OUTPUT);
+    pinmode(led2,OUTPUT);
+    
+    Particle.function("on",leda);
+    Particle.function("off",ledb);
+    
+    digitalWrite(led1,LOW);
+     digitalWrite(led2,LOW);
+     
+}
+int leda(String command)
+{
+    digitalWrite(led1,HIGH);
+    delay(1500);
+     digitalWrite(led2,HIGH);
+    delay(1500);
+    return 1;
+}
+int ledb(String command)
+{
+     digitalWrite(led1,LOW);
+    delay(1500);
+     digitalWrite(led2,LOW);
+    delay(1500);
+    return 1;
+}
